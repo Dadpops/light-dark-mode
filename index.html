@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Dark Mode</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Light/Dark Mode Toggle -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+    <!-- Navigation -->
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="title-group">
+            <h1>Chris Cabena</h1>
+            <h2>-DADPOPS-</h2>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h1>Skills</h1>
+        <div class="about-container">
+            <div class="image-container">
+                <h2>JS Frameworks</h2>
+                <img src="img/jsred-light.png" alt="Javascript Frameworks" id="image1">
+            </div>
+            <div class="image-container">
+                <h2>Code Review</h2>
+                <img src="img/reviewred-light.png" alt="Code Review" id="image2">
+            </div>
+            <div class="image-container">
+                <h2>Web Development</h2>
+                <img src="img/webred-light.png" alt="Web Development" id="image3">
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="buttons">
+            <button class="primary">Project</button>
+            <button class="primary">Project</button>
+            <button class="primary">Project</button>
+            <button class="primary">Project</button>
+            <button class="primary">Project</button>
+        </div>
+        <div class="text-box" id="text-box">
+            <p>Here are some of my favorite projects that I've done.</p>
+        </div>
+    </section>
+    <!-- Contacts Section -->
+    <section id="contact">
+        <div class="social-icons">
+            <i class="fab fa-github-square"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
