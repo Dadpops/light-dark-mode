@@ -85,10 +85,11 @@ a:focus {
 
 .image-container {
   border: 1px solid var(--secondary-color);
-  border-radius: 10px;
+  border-radius: 40px;
   padding: 10px 20px;
-  margin-right: 25px;
-  width: auto;
+  margin-right: 20px;
+  width: 100%;
+  height: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
 }
@@ -250,4 +251,23 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+
+@media only screen and (max-width:870px) {
+  nav {
+    width: 25%;
+  }
+
+  .fab {
+    margin: auto;
+  }
+
+  .text-box{
+    margin: auto;
+    width: 80vw;
+  }
+
+  #projects {
+    margin: auto;
+  }
 }
