@@ -101,11 +101,13 @@ a:focus {
 }
 
 button {
+  display: flex;
   min-width: 100px;
-  height: 40px;
+  width: 100%;
+  height: auto;
   cursor: pointer;
   border-radius: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
   border: 2px solid var(--primary-color);
   font-size: 15px;
   outline: none;
@@ -161,9 +163,15 @@ p {
 }
 
 /* Contact Section */
+#contact {
+  display: flex;
+  justify-content: center;
+}
+
 .fab {
   font-size: 100px;
-  margin-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -329,7 +337,8 @@ input:checked + .slider::before {
   }
 
   .fab {
-    margin: auto;
+    display: flex;
+    justify-content: center;
   }
 
   .text-box{
