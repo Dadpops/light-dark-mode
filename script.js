@@ -1,12 +1,21 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
+const image1 = document.getElementById('image1');
+const image2 = document.getElementById('image2');
+const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
 const img = document.getElementById("resume");
 const modalImg = document.getElementById("img01");
 const captionText = document.getElementById("caption");
 const modal = document.getElementById("myModal");
 
+// Dark/Light Images
+function imageMode(color) {
+    image1.src = `img/js_${color}.png`;
+    image2.src = `img/review_${color}.png`;
+    image3.src = `img/web_${color}.png`;
+}
 
 // Toggle Dark and Light
 function toggleDarkLightMode(isDark) {
@@ -47,16 +56,16 @@ if (currentTheme) {
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 
-img.onclick = function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
