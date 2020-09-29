@@ -334,6 +334,8 @@ input:checked + .slider::before {
 @media only screen and (max-width:870px) {
   nav {
     width: 25%;
+    font-size: medium;
+    background-color: transparent;
   }
 
   .fab {
@@ -347,10 +349,14 @@ input:checked + .slider::before {
   }
 
   #projects {
-    margin: auto;
+    margin: 50%;
   }
 
   .modal-content {
     width: 100%;
+  }
+
+  .section_title {
+    font-size: 75px;
   }
 }
