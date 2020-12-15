@@ -6,6 +6,7 @@ Light/Dark Mode-
 
 CSS Root Styling for easy swapping
 
+```css
 :root {
 
   --primary-color: rgb(255, 92, 92);
@@ -42,6 +43,7 @@ CSS Root Styling for easy swapping
   
   --background: #121212;
 }
+```
 
 
 JS to swap between color schemes - 
